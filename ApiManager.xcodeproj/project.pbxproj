@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E336F03822143CEB00BEA79B /* WebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E336F03722143CEB00BEA79B /* WebServiceManager.swift */; };
 		E3F0792822143C200075A90B /* ApiManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F0791E22143C200075A90B /* ApiManager.framework */; };
 		E3F0792D22143C200075A90B /* ApiManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F0792C22143C200075A90B /* ApiManagerTests.swift */; };
 		E3F0792F22143C200075A90B /* ApiManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E3F0792122143C200075A90B /* ApiManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +24,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E336F03722143CEB00BEA79B /* WebServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceManager.swift; sourceTree = "<group>"; };
 		E3F0791E22143C200075A90B /* ApiManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ApiManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3F0792122143C200075A90B /* ApiManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApiManager.h; sourceTree = "<group>"; };
 		E3F0792222143C200075A90B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				E3F0792122143C200075A90B /* ApiManager.h */,
+				E336F03722143CEB00BEA79B /* WebServiceManager.swift */,
 				E3F0792222143C200075A90B /* Info.plist */,
 			);
 			path = ApiManager;
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					E3F0791D22143C200075A90B = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 					};
 					E3F0792622143C200075A90B = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E336F03822143CEB00BEA79B /* WebServiceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +344,7 @@
 		E3F0793322143C200075A90B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -356,7 +362,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.switch.ApiManager;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -364,6 +371,7 @@
 		E3F0793422143C200075A90B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -381,7 +389,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.switch.ApiManager;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -389,6 +397,7 @@
 		E3F0793622143C200075A90B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FXMTQ7GN5N;
 				INFOPLIST_FILE = ApiManagerTests/Info.plist;
@@ -407,6 +416,7 @@
 		E3F0793722143C200075A90B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FXMTQ7GN5N;
 				INFOPLIST_FILE = ApiManagerTests/Info.plist;
