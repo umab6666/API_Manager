@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios,"12.0"
 
-  s.source       = { :git => "https://github.com/umab6666/API_Manager.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/umab6666/API_Manager.git", :tag => "1.0.0" }
 
   s.source_files  = "ApiManager"
 
